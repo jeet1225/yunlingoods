@@ -8,8 +8,8 @@ $(function() {
     $(".toggle").click(toggleSlideMenu);
     $(".nav").on("click", toggleMenu);
 
-    $(".nav1").on("click", "span", function(event) {
-        $(event.delegateTarget).toggleClass("on");
+    $(".nav1").on("click", function(event) {
+        $(this).toggleClass("on");
     });
     
     $(".board").on("click", "div", function(event) {
