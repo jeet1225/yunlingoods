@@ -150,7 +150,7 @@ ul.sub li{
 	cursor: pointer;
 	transition: 0.3s;
 }
-ul.sub li:hover{
+ul.sub li:hover,ul.sub li.on{
 	background: rgba(255, 255, 255, 0.2);
 }
 .kv{
@@ -215,7 +215,7 @@ h2 img{
 	cursor: pointer;
 	transition: 0.3s;
 }
-.login_form .short button:hover,.login_form > button:hover,.forget:hover,.class_list table button:hover{
+.login_form .short button:hover,.login_form > button:hover,.forget:hover,.class_list table button:hover,.class_but button:hover{
 	filter: brightness(1.2);
 }
 .login_form > button{
@@ -377,6 +377,8 @@ h2 img{
 	width: 6%;
 }
 .class_sele > div.class_sele_calendar select{
+	background: url(../img/icon_11.png) no-repeat center right #fff;
+	background-position-x: 87%;
 	width: 37%;
 }
 .class_sele > div:nth-child(3n){
@@ -394,6 +396,8 @@ h2 img{
 	color: #fff;
 	border-radius: 8px;
 	padding: 3px 0;
+	cursor: pointer;
+	transition: 0.3s;
 }
 button.clear{
 	background: #93918F;
