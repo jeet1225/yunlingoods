@@ -2,11 +2,11 @@ $(function() {
     $(window).on("resize", function() {
         if ($(this).width() > 1000) {
             $(".toggle").removeClass("active");
-            $(".nav").removeAttr("style");
+            $(".left").removeAttr("style");
         }
     });
     $(".toggle").click(toggleSlideMenu);
-    $(".nav").on("click", toggleMenu);
+    $(".left").on("click", toggleMenu);
 
     $(".nav1").on("click", function(event) {
         $(this).toggleClass("on");
@@ -30,10 +30,11 @@ $(function() {
 
 function toggleSlideMenu(event) {
     $(".toggle").toggleClass("active");
-    $(".nav").slideToggle();
+    $(".left").slideToggle();
 }
 function toggleMenu(event) {
-    if ($(".toggle:visible").hasClass("active")) {
+    var $item = $(event.target).closest("li");
+    if ($(".toggle:visible").hasClass("active") && !$item.hasClass("nav1")) {
         toggleSlideMenu(event)
     }
 }
