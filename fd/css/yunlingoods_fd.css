@@ -33,7 +33,7 @@ html{
 	font-size: 16px;
 	line-height: 1.8;
 }
-.hide,.toggle{
+.hide,.toggle,.f_m{
 	display: none;
 }
 .top{
@@ -245,7 +245,7 @@ h2 img{
 	vertical-align: sub;
 }
 .footer img{
-	vertical-align: sub;
+	vertical-align: top;
 }
 .footer_left{
 	float: left;
