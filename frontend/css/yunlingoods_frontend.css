@@ -412,19 +412,16 @@ h2 img{
 	font-weight: normal;
 	font-size: 16px;
 }
-.class_sele input{
+.keywords input{
 	padding: 2px 8px;
 	width: calc(100% - 103px);
 }
 .class_sele > div.class_sele_lone,.class_sele > div.class_sele_calendar{
-	width: 40%;
+	width: 39.5%;
 }
-.class_sele > div span.short{
-	width: 6%;
-}
-.class_sele > div.class_sele_calendar select{
+.class_sele > div.class_sele_calendar input{
 	background: url(../img/icon_11.png) no-repeat center right #fff;
-	background-position-x: 87%;
+	background-position-x: 97%;
 	width: 37%;
 }
 .class_sele > div:nth-child(3n){
