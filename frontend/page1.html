@@ -13,10 +13,13 @@
 <meta property="og:description" content="">
 <meta property="og:url" content="">
 <meta property="og:image" content="">
-<link rel="stylesheet" href="css/yunlingoods_fd.css">
-<link rel="stylesheet" href="css/yunlingoods_fd_media.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/yunlingoods_frontend.css">
+<link rel="stylesheet" href="css/yunlingoods_frontend_media.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="js/yunlingoods_fd.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/yunlingoods_frontend.js"></script>
 <!-- google fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,21 +41,29 @@
       <ul class="sub">
         <li>109年度商品及廠商介紹手冊</li>
         <li>110年度商品及廠商介紹手冊</li>
-        <li onclick="location.href='fd_page4.html'">111年度商品及廠商介紹手冊</li>
+        <li onclick="location.href='page4.html'">111年度商品及廠商介紹手冊</li>
       </ul>
     </li>
   </ul>
 </div>
 <!--right-->
 <div class="right">
-  <div class="kv"></div>
+  <div class="kv">
+    <div class="arr arrl"></div>
+    <div class="arr arrr"></div>
+    <div class="kvpicout owl-carousel owl-theme">
+      <div class="kvpic kv_p1">1</div>
+      <div class="kvpic kv_p2">2</div>
+      <div class="kvpic kv_p3">3</div>
+    </div>
+  </div>
   <div class="main">
     <h2><img src="img/icon_13.png"/>會員登入</h2>
     <div class="login_form">
       <div><span>帳號</span><input type="text" placeholder="請輸入電話或統一編號"></div>
       <div><span>密碼</span><input type="text" placeholder="請輸入密碼"></div>
       <div class="short"><span>驗證</span><input type="text" placeholder="請輸入驗證碼"><img src="img/verification.png" /><button></button></div>
-      <button onclick="location.href='fd_page2.html'">登入</button>
+      <button onclick="location.href='page2.html'">登入</button>
       <button class="register">註冊帳號</button>
       <div class="forget"><img src="img/icon_09.png" />忘記密碼</div>
     </div>
