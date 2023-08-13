@@ -12,11 +12,8 @@ $(function() {
         $(this).toggleClass("on");
     });
     
-    $(".board").on("click", "div", function(event) {
-        var $this = $(event.target);
-        if (!$this.hasClass("on")) {
-            $(event.delegateTarget).children(".on").add($this).toggleClass("on");
-        }
+    $(".board").on("click", "> div", function(event) {
+        $(event.currentTarget).toggleClass("on");
     });
 
     $(".tab").on("click", "div", function(event) {
@@ -54,25 +51,6 @@ $(function() {
         // Parameters has to be in square bracket '[]'
         owl.trigger('prev.owl.carousel', [300]);
     })
-
-    $('#date_timepicker_start').datetimepicker({
-        format:'Y/m/d',
-        onShow:function( ct ){
-         this.setOptions({
-          maxDate:jQuery('#date_timepicker_end').val()?jQuery('#date_timepicker_end').val():false
-         })
-        },
-        timepicker:false
-    });
-    $('#date_timepicker_end').datetimepicker({
-        format:'Y/m/d',
-        onShow:function( ct ){
-         this.setOptions({
-          minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
-         })
-        },
-        timepicker:false
-    });
 });
 
 function toggleSlideMenu(event) {

@@ -362,6 +362,7 @@ h2 img{
 	top: 18px;
 	width: 40px;
 	height: 40px;
+	z-index: 0;
 }
 .board > div.on span{
 	background: url(../img/icon_18.png) no-repeat center ;
@@ -412,6 +413,11 @@ h2 img{
 	font-weight: normal;
 	font-size: 16px;
 }
+.class_sele select{
+	appearance:none;
+	background: url(../img/icon_25.png) no-repeat center right #fff;
+	background-position-x: 95%;
+}
 .keywords input{
 	padding: 2px 8px;
 	width: calc(100% - 103px);
@@ -421,7 +427,7 @@ h2 img{
 }
 .class_sele > div.class_sele_calendar input{
 	background: url(../img/icon_11.png) no-repeat center right #fff;
-	background-position-x: 97%;
+	background-position-x: 95%;
 	width: 37%;
 }
 .class_sele > div:nth-child(3n){
