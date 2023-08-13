@@ -27,26 +27,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <title>雲林良品智慧雲端系統</title>
-<script>
-  $('#date_timepicker_start').datetimepicker({
-      format:'Y/m/d',
-      onShow:function( ct ){
-       this.setOptions({
-        maxDate:jQuery('#date_timepicker_end').val()?jQuery('#date_timepicker_end').val():false
-       })
-      },
-      timepicker:false
-  });
-  $('#date_timepicker_end').datetimepicker({
-      format:'Y/m/d',
-      onShow:function( ct ){
-       this.setOptions({
-        minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
-       })
-      },
-      timepicker:false
-  });
-</script>
 </head>
 <body>
 <div class="grid-container">
@@ -219,5 +199,25 @@
   <div class="footer_right">Copyright © 2023 版權所有 巨鷗科技</div>
 </div>
 </div>
+<script>
+  $('#date_timepicker_start').datetimepicker({
+      format:'Y/m/d',
+      onShow:function( ct ){
+       this.setOptions({
+        maxDate:jQuery('#date_timepicker_end').val()?jQuery('#date_timepicker_end').val():false
+       })
+      },
+      timepicker:false
+  });
+  $('#date_timepicker_end').datetimepicker({
+      format:'Y/m/d',
+      onShow:function( ct ){
+       this.setOptions({
+        minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
+       })
+      },
+      timepicker:false
+  });
+</script>
 </body>
 </html>
