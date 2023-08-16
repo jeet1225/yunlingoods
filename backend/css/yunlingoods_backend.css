@@ -408,6 +408,9 @@ input[type=checkbox]:checked::before {
 	background-position-x: calc(100% - 10px);
 	width: 35%;
 }
+.class_sele.company2 > div.class_sele_calendar input,.class_sele.assessment > div.class_sele_calendar input{
+	width: 30%;
+}
 .class_but{
 	width: 100px;
 	border-left: 1px solid #A66F4B;
@@ -458,8 +461,8 @@ button.clear{
 	border-radius: 0 10px 0 0;
 }
 .class_list.be1 table tbody td:nth-child(3),.class_list.be1 table tbody td:nth-child(5){
-	width: 16%;
 	text-align: left;
+	width: 16%;
 }
 .green{
 	color: #31AC76;

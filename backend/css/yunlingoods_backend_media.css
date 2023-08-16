@@ -36,11 +36,11 @@
 }
 }
 @media screen and (max-width:1650px){
-.class_sele > div.class_sele_calendar input{
+.class_sele > div.class_sele_calendar input,.class_sele.company2 > div.class_sele_calendar input,.class_sele.assessment > div.class_sele_calendar input{
 	width: 26%;
-}	
 }
-@media screen and (max-width:1600px){
+}
+@media screen and (max-width:1610px){
 .be_kv{
 	background: url(../img/be_kv.png) no-repeat center #C69C6D;
 	background-position-x: calc(50% - 35px);
@@ -61,6 +61,21 @@
 }
 .class_sele > div span {
     margin-right: 2px;
+}
+.class_list.be1 table tbody td:nth-child(3),.class_list.be1 table tbody td:nth-child(5){
+	width: 12%;
+}
+.f_m1{
+	width: 45px;
+}
+.f_m2{
+	width: 75px;
+}
+.f_m3{
+	width: 160px;
+}
+.f_m4{
+	width: 60px;
 }
 }
 @media screen and (max-width:1500px){
@@ -100,14 +115,14 @@
 	margin: 10px 2%;
 }
 .login{
-	top: 55px;
-	right: 60px;
+	top: 64px;
+	right: 55px;
 }
 .toggle{
 	display: block;
 	position: absolute;
-	top:50px;
-	right:10px;
+	top:57px;
+	right:5px;
 	z-index: 205;
 	background:url(../img/nav.png) no-repeat;
 	background-size: contain;
@@ -192,6 +207,11 @@ h1{
 	width: 64%;
 }
 }
+@media screen and (max-width:900px){
+.permissions {
+	width: 100%;
+}
+}
 @media screen and (max-width:770px){
 .logo {
 	font-size: 22px;
@@ -204,6 +224,18 @@ h1{
 }
 .f_m{
 	display: none;
+}
+.class_sele select, .per_sele select{
+    width: calc(100% - 90px);
+}
+.class_sele > div.class_sele_lone2{
+    width: calc(100% - 6px);
+}
+.class_sele.company > div {
+    width: 100%;
+}
+.class_sele.assessment > div.class_sele_lone2 {
+    width: 100%;
 }
 }
 @media screen and (max-width:600px){
