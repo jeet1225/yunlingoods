@@ -32,13 +32,14 @@ body, html{
 html{
 	font-size: 16px;
 	line-height: 1.8;
+	background: #70472C;
 }
 .hide,.toggle,.f_m{
 	display: none;
 }
 .be_kv{
 	display: inline-block;
-	background: url(../img/be_kv.png) no-repeat #C69C6D center left;
+	background: url(../img/be_kv.png) no-repeat center right #C69C6D;
 	width: 50%;
 	height: 100vh;
 	vertical-align: top;
@@ -87,7 +88,6 @@ h1{
 	grid-template-rows: 65px 1fr 50px;
 	grid-template-columns: 350px 1fr;
 	gap: 10px 40px;
-	background: #70472C;
 }
 .logo{
 	background: url(../img/logo.png) no-repeat left center;
@@ -362,8 +362,8 @@ h2 img{
 .class_sele select,.class_sele input,.per_sele select{
 	border-radius: 8px;
 	border: 1px solid #A66F4B;
-	padding: 3px 10px;
-	width: calc(100% - 85px);
+	padding: 3px 25px 3px 10px;
+	width: calc(100% - 100px);
 	font-weight: normal;
 	font-size: 16px;
 }

@@ -408,15 +408,15 @@ h2 img{
 .class_sele select,.class_sele input{
 	border-radius: 8px;
 	border: 1px solid #A66F4B;
-	padding: 3px 5px;
-	width: calc(100% - 85px);
+	padding: 3px 25px 3px 10px;
+	width: calc(100% - 100px);
 	font-weight: normal;
 	font-size: 16px;
 }
 .class_sele select{
 	appearance:none;
 	background: url(../img/icon_25.png) no-repeat center right #fff;
-	background-position-x: 95%;
+	background-position-x: calc(100% - 10px);
 }
 .keywords input{
 	padding: 2px 8px;
@@ -427,8 +427,8 @@ h2 img{
 }
 .class_sele > div.class_sele_calendar input{
 	background: url(../img/icon_11.png) no-repeat center right #fff;
-	background-position-x: 95%;
-	width: 37%;
+	background-position-x: calc(100% - 10px);
+	width: 26.5%;
 }
 .class_sele > div:nth-child(3n){
 	margin-right: 0;
