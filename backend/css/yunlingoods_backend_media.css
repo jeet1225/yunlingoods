@@ -91,6 +91,11 @@
 	background: url(../img/kv_m.png) no-repeat center #c69c6d;
 	background-size: cover;
 }
+.popup > div{
+	width: calc(80% - 100px);
+	top: 30%;
+	left: 10%;
+}
 }
 @media screen and (max-width:1250px){
 .grid-container {
@@ -206,10 +211,33 @@ h1{
 .class_sele > div.class_sele_lone, .class_sele > div.class_sele_calendar {
 	width: 64%;
 }
+.popup > div{
+	width: calc(90% - 100px);
+	top: 10%;
+	left: 5%;
+}
+.popup.op2 > div{
+	width: calc(90% - 100px);
+	top: 5%;
+	left: 5%;
+}
+.poptable input.class_sele_time{
+	width: 80px;
+}
 }
 @media screen and (max-width:900px){
 .permissions {
 	width: 100%;
+}
+.poptable tr td:first-child{
+	width: 100px;
+	font-size: 16px;
+}
+.f_m5{
+	display: block;
+}
+.poptable input.class_sele_time{
+	margin-top: 10px;
 }
 }
 @media screen and (max-width:770px){
@@ -236,6 +264,17 @@ h1{
 }
 .class_sele.assessment > div.class_sele_lone2 {
     width: 100%;
+}
+.popup > div,.popup.op2 > div{
+	padding: 50px 20px 20px 20px;
+	width: calc(96% - 40px);
+	left: 2%;
+}
+}
+@media screen and (max-width:630px){
+.f_m6{display: block;}
+.f_m6a{
+	margin-top: 10px;
 }
 }
 @media screen and (max-width:600px){
@@ -268,5 +307,8 @@ h1{
 	border-left: none;
 	padding: 10px 0 0 0;
 	margin: 10px 0 0 0;
+}
+table.file{
+	font-size: 13px;
 }
 }

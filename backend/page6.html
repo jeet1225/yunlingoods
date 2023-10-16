@@ -30,6 +30,133 @@
 </head>
 <body>
 <div class="grid-container">
+<!--popup-->
+<div class="popup op2">
+  <div>
+    <div class="closepop" onclick="close_popup('popup');"></div>
+    <h2>新增課程</h2>
+    <div class="op2high">    
+      <table class="poptable">
+        <tr>
+          <td>課程名稱</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>主辦人</td>
+          <td>
+            <select>
+              <option disabled selected>請選擇</option>
+              <option></option>
+            </select><br class="f_m6"/>
+            <select class="f_m6a">
+              <option disabled selected>請選擇</option>
+              <option></option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>連絡電話</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>主講者</td>
+          <td>
+            <select>
+              <option disabled selected>請選擇</option>
+              <option></option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>講課地點</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>課程時間</td>
+          <td>
+            <input  class="class_sele_calendar" id="date_timepicker" /><br class="f_m5"/>
+            <input  class="class_sele_time" id="timepicker_start" />
+            <input  class="class_sele_time" id="timepicker_end" />
+          </td>
+        </tr>
+        <tr>
+          <td>課程說明</td>
+          <td>
+            <select>
+              <option disabled selected>請選擇</option>
+              <option></option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>報名截止日期</td>
+          <td>
+            <input  class="class_sele_calendar" id="date_timepicker2" />
+          </td>
+        </tr>
+        <tr>
+          <td>開放名額</td>
+          <td><input type="text"> 位</td>
+        </tr>
+        <tr>
+          <td>費用</td>
+          <td><input type="text"> 元</td>
+        </tr>
+        <tr>
+          <td>是否供餐</td>
+          <td>
+            <span><input type="radio" name="meals"> 是</span>
+            <span><input type="radio" name="meals" checked > 否</span>
+          </td>
+        </tr>
+        <tr>
+          <td>視訊連結</td>
+          <td><input type="text" class="long"></td>
+        </tr>
+        <tr>
+          <td>相關連結</td>
+          <td><input type="text" class="long"></td>
+        </tr>
+        <tr>
+          <td>附加檔案</td>
+          <td>
+            <button class="selefile">選擇檔案</button>
+            <table class="file">
+              <thead>
+                <tr>
+                  <th>項次</th>
+                  <th>檔案</th>
+                  <th>上傳日期</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>檔案名稱檔案名稱檔案名稱</td>
+                  <td>2023/10/10</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>檔案名稱檔案名稱檔案名稱</td>
+                  <td>2023/10/10</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>檔案名稱檔案名稱檔案名稱</td>
+                  <td>2023/10/10</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="tips">※ 注意事項：檔案名稱上限50個字，大小上限5MB；僅限jpg、png、jpeg、bmp格式</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="class_but2">
+      <button class="clear">取消</button><button>儲存</button>
+    </div>
+  </div>
+</div>
 <!--top-->
 <div class="top">
   <div class="logo">雲林良品智慧雲端系統後端維護管理</div>
@@ -134,7 +261,7 @@
             <td>雲林縣政府 雲林良品</td>
             <td>10</td>
             <td>10</td>
-            <td><button>檢視滿意度</button></td>
+            <td><button onclick="open_popup('op2')">檢視滿意度</button></td>
           </tr>
           <tr>
             <td>2</td>
@@ -143,7 +270,7 @@
             <td>雲林縣政府 雲林良品</td>
             <td>10</td>
             <td>10</td>
-            <td><button>檢視滿意度</button></td>
+            <td><button onclick="open_popup('op2')">檢視滿意度</button></td>
           </tr>
           <tr>
             <td>3</td>
@@ -152,7 +279,7 @@
             <td>雲林縣政府 雲林良品</td>
             <td>10</td>
             <td>10</td>
-            <td><button>檢視滿意度</button></td>
+            <td><button onclick="open_popup('op2')">檢視滿意度</button></td>
           </tr>
           <tr>
             <td>4</td>
@@ -161,7 +288,7 @@
             <td>雲林縣政府 雲林良品</td>
             <td>10</td>
             <td>10</td>
-            <td><button>檢視滿意度</button></td>
+            <td><button onclick="open_popup('op2')">檢視滿意度</button></td>
           </tr>
           <tr>
             <td>5</td>
@@ -170,7 +297,7 @@
             <td>雲林縣政府 雲林良品</td>
             <td>10</td>
             <td>10</td>
-            <td><button>檢視滿意度</button></td>
+            <td><button onclick="open_popup('op2')">檢視滿意度</button></td>
           </tr>
         </tbody>
       </table>
@@ -213,6 +340,34 @@
        })
       },
       timepicker:false
+  });
+  $('#date_timepicker').datetimepicker({
+      format:'Y/m/d',
+      timepicker:false
+  });
+  $('#date_timepicker2').datetimepicker({
+      format:'Y/m/d',
+      timepicker:false
+  });
+  $('#timepicker_start').datetimepicker({
+      //format:'H:i',
+      step:15,
+      datepicker:false,
+      onShow:function( ct ){
+       this.setOptions({
+        maxTime:jQuery('#timepicker_end').val()?jQuery('#timepicker_end').val():false
+       })
+      }
+  });
+  $('#timepicker_end').datetimepicker({
+      //format:'H:m',
+      step:15,
+      datepicker:false,
+      onShow:function( ct ){
+       this.setOptions({
+        minTime:jQuery('#timepicker_start').val()?jQuery('#timepicker_start').val():false
+       })
+      }
   });
 </script>
 </body>

@@ -34,7 +34,7 @@ html{
 	line-height: 1.8;
 	background: #70472C;
 }
-.hide,.toggle,.f_m{
+.hide,.toggle,.f_m,.f_m5,.f_m6{
 	display: none;
 }
 .be_kv{
@@ -284,7 +284,7 @@ h2 img{
 	cursor: pointer;
 	transition: 0.3s;
 }
-.login_form .short button:hover,.login_form > button:hover,.forget:hover,.class_list table button:hover,.class_but button:hover{
+.login_form .short button:hover,.login_form > button:hover,.forget:hover,.class_list table button:hover,.class_but button:hover,.selefile:hover{
 	filter: brightness(1.2);
 }
 .login_form > button{
@@ -359,7 +359,7 @@ h2 img{
 	text-align: right;
 	margin-right: 5px;
 }
-.class_sele select,.class_sele input,.per_sele select{
+.class_sele select,.class_sele input,.per_sele select,.poptable input,.poptable select{
 	border-radius: 8px;
 	border: 1px solid #A66F4B;
 	padding: 3px 25px 3px 10px;
@@ -367,7 +367,7 @@ h2 img{
 	font-weight: normal;
 	font-size: 16px;
 }
-.class_sele select,.per_sele select{ 
+.class_sele select,.per_sele select,.poptable select{ 
 	appearance:none;
 	background: url(../img/icon_be_30.png) no-repeat center right #fff;
 	background-position-x: calc(100% - 10px);
@@ -402,7 +402,7 @@ input[type=checkbox]:checked::before {
 .class_sele > div.class_sele_lone2{
 	width: 67%;
 }
-.class_sele > div.class_sele_calendar input{
+.class_sele > div.class_sele_calendar input,.poptable input.class_sele_calendar{
 	background: url(../img/icon_be_18.png) no-repeat center right #fff;
 	background-position-x: calc(100% - 10px);
 	width: 35%;
@@ -415,7 +415,7 @@ input[type=checkbox]:checked::before {
 	border-left: 1px solid #A66F4B;
 	padding-left: 10px;
 }
-.class_but button{
+.class_but button,.class_but2 button,.selefile{
 	display: block;
 	width: 100px;
 	background: #34130C;
@@ -633,6 +633,147 @@ h3{
 	padding: 2px 0;
 	font-weight: 300;
 }
-
-
-
+.popup{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 300;
+	top: 0;
+}
+.popup > div{
+	position: relative;
+	width: calc(50% - 100px);
+	height: fit-content;
+	padding: 50px;
+	background: #fff;
+	border-radius: 20px;
+	top: 20%;
+	left: 25%;
+}
+.closepop{
+	position: absolute;
+	background:url(../img/close.png) no-repeat;
+	background-size: contain;
+	width: 35px;
+	height: 35px;
+	top: 20px;
+	right: 20px;
+	filter: invert(70%);
+	cursor: pointer;
+	transition: 0.3s;
+}
+.closepop:hover{
+	transform: rotate(180deg);
+}
+.popup > div p{
+	margin-top: 15px;
+}
+.popup.op2 > div{
+	width: 800px;
+	top: 5%;
+	left: calc(50% - 450px);
+}
+.op2high{
+	height: calc(90vh - 200px);
+	overflow: auto;
+}
+.poptable{
+	width: 100%;
+	margin-top: 10px;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+.poptable tr td{
+	padding: 2px;
+}
+.poptable tr td:first-child{
+	text-align: center;
+	background: #ECDFD7;
+	font-weight: 500;
+	width: 180px;
+	font-size: 18px;
+}
+.poptable tr td:last-child{
+	width: calc(100% - 200px);
+}
+.poptable input,.poptable input.class_sele_calendar{
+	width: 150px;
+	margin-right: 5px;
+}
+.poptable input:last-child{
+	margin-right: 0;
+}
+.poptable select{
+	width: 188px;
+	margin-right: 5px;
+}
+.poptable input.class_sele_time{
+	width: 120px;
+	background: url(../img/icon_be_32.png) no-repeat center right #fff;
+	background-position-x: calc(100% - 10px);
+}
+.poptable span{
+	display: inline-block;
+	margin-right: 20px;
+}
+input[type=radio]{
+	appearance: none;
+	position: relative;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	outline: 1px solid #A66F4B;
+	border: 2px solid #fff;
+	background: #fff;
+	vertical-align: middle;
+	top: -2px;
+}
+input[type=radio]:checked {
+	background: #A66F4B;
+}
+.poptable input.long{
+	width: calc(100% - 80px);
+}
+.tips{
+	color: #A66F4B;
+	font-size: 14px;
+	margin-top: 5px;
+}
+table.file{
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #34130C;
+	text-align: center;
+}
+table.file thead{
+	background:  #34130C;
+	color: #fff;
+}
+table.file tr td:first-child{
+	width: auto;
+	background:#fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+table.file td{
+	padding: 4px 2px;
+}
+table.file tbody tr td:nth-child(2){
+	text-align: left;
+}
+.selefile{
+	width: 200px;
+	margin-bottom: 10px;
+}
+.op2 .class_but2{
+	text-align: right;
+	border-top: 1px solid #A66F4B;
+	padding-top: 10px;
+}
+.op2 .class_but2 button{
+	display: inline-block;
+	margin-left: 20px;
+}
