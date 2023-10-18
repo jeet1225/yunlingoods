@@ -74,9 +74,9 @@
         <tr>
           <td>課程時間</td>
           <td>
-            <input  class="class_sele_calendar" id="date_timepicker" /><br class="f_m5"/>
-            <input  class="class_sele_time" id="timepicker_start" />
-            <input  class="class_sele_time" id="timepicker_end" />
+            <input inputmode="none" class="class_sele_calendar" id="date_timepicker" /><br class="f_m5"/>
+            <input inputmode="none" class="class_sele_time" id="timepicker_start" />
+            <input inputmode="none" class="class_sele_time" id="timepicker_end" />
           </td>
         </tr>
         <tr>
@@ -91,7 +91,7 @@
         <tr>
           <td>報名截止日期</td>
           <td>
-            <input  class="class_sele_calendar" id="date_timepicker2" />
+            <input inputmode="none" class="class_sele_calendar" id="date_timepicker2" />
           </td>
         </tr>
         <tr>
@@ -127,6 +127,7 @@
                   <th>項次</th>
                   <th>檔案</th>
                   <th>上傳日期</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -134,16 +135,19 @@
                   <td>1</td>
                   <td>檔案名稱檔案名稱檔案名稱</td>
                   <td>2023/10/10</td>
+                  <td><a href="" class="delete"></a></td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>檔案名稱檔案名稱檔案名稱</td>
                   <td>2023/10/10</td>
+                  <td><a href="" class="delete"></a></td>
                 </tr>
                 <tr>
                   <td>3</td>
                   <td>檔案名稱檔案名稱檔案名稱</td>
                   <td>2023/10/10</td>
+                  <td><a href="" class="delete"></a></td>
                 </tr>
               </tbody>
             </table>
@@ -232,7 +236,7 @@
         </div>
         <div class="class_sele_calendar">
           <span>課程時間</span>
-          <input id="date_timepicker_start" /> ~ <input id="date_timepicker_end" />
+          <input inputmode="none" id="date_timepicker_start" /> ~ <input inputmode="none" id="date_timepicker_end" />
         </div>
       </div>
       <div class="class_but">

@@ -239,6 +239,9 @@ h1{
 .poptable input.class_sele_time{
 	margin-top: 10px;
 }
+.poptable input.class_sele_time{
+	width: 115px;
+}
 }
 @media screen and (max-width:770px){
 .logo {

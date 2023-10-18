@@ -521,7 +521,7 @@ button.clear{
 .class_list table .off{
 	color: #93918F;
 }
-.class_list table .manage a{
+.class_list table .manage a,.file a{
 	display: inline-block;
 	background: url(../img/icon_be_20.png) no-repeat center;
 	width: 25px;
@@ -529,7 +529,7 @@ button.clear{
 	vertical-align: middle;
 	transition: 0.3s;
 }
-.class_list table .manage a.delete{
+.class_list table .manage a.delete,.file a.delete{
 	background: url(../img/icon_be_21.png) no-repeat center;
 	margin-left: 10px;
 }
@@ -759,7 +759,7 @@ table.file tr td:first-child{
 	font-weight: normal;
 }
 table.file td{
-	padding: 4px 2px;
+	padding: 5px 2px;
 }
 table.file tbody tr td:nth-child(2){
 	text-align: left;
