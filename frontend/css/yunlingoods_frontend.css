@@ -578,4 +578,19 @@ button.clear{
 	height: 328px;
 	margin: 20px auto 0 auto;
 }
+.xdsoft_datetimepicker .xdsoft_datepicker {
+    width: 280px;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th {
+    font-size: 15px;
+    height: 30px;
+}
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+    height: 180px;
+}
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div {
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+}
 
