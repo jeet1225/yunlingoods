@@ -113,7 +113,7 @@
 }
 .left{
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 100px;
 	width: calc(100% - 60px);
 	border-radius: 0;
